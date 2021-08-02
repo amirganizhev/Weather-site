@@ -1,0 +1,144 @@
+/*Общие стили*/
+body {
+	padding: 0px;
+	margin: 0px;
+	background: radial-gradient(at top, #FEFFFF, #b4e6fa); 
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+@font-face {
+    font-family: bureau;
+    src: url(../fonts/ofont.ru_BureauAP.ttf);
+}
+
+@font-face {
+    font-family: romul;
+    src: url(../fonts/ofont.ru_Romul.ttf);
+}
+
+.content {
+	width: 1200px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/*Поиск города 0aaff4*/
+.main-search {
+	display: flex;
+	background-color: #0aaff4;
+	font-family: bureau;
+}
+
+.main-search img {
+	width: 70px;
+	margin-right: 10px;
+	margin-left: 20px;
+}
+
+.main-search h1 {
+	color: white;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.main-search input {
+	border: none;
+	outline: none;
+	margin-right: 10px;
+	margin-left: 10px;
+	margin-top: 30px;
+	height: 50px;
+	width: 850px;
+}
+
+.main-search button {
+	font-family: bureau;
+	cursor: pointer;
+	margin-right: 20px;
+	margin-left: 10px;
+	margin-top: 30px;
+	height: 50px;
+	width: 150px;
+	border: none;
+	outline: none;
+	background-color: #ffdc60;
+}
+
+/*Показ погоды*/
+.weather {
+	width: 100%;
+	margin-top: 20px;
+	border-radius: 25px;
+	color: white;
+	background-color: #53689f;
+	font-family: romul;
+	padding-bottom: 50px;
+}
+
+.country-list {
+	position: relative;
+	font-size: 75px;
+	left: 50px;
+	top: 50px;
+}
+
+.selected-city {
+	position: relative;
+	font-size: 75px;
+	left: 50px;
+	top: 50px;
+}
+
+.foundation-weather {
+	display: flex;
+}
+
+.temperature {
+	position: relative;
+	font-size: 115px;
+	left: 50px;
+	top: 50px;
+}
+
+.weather-icon {
+	position: relative;
+	top: 10px;
+	left: 30px;
+}
+
+.weather-description {
+	position: relative;
+	top: 75px;
+	left: 30px;
+	font-size: 35px;
+}
+
+.feels_like-temperature {
+	position: relative;
+	top: 120px;
+	right: 340px;
+	font-size: 20px;
+}
+
+.addition-weather {
+	display: flex;
+	position: relative;
+	left: 50px;
+	bottom: 10px;
+	font-size: 20px;
+}
+
+.pressure {
+	margin-right: 50px;
+}
+
+.humidity {
+	margin-right: 50px;
+}
+
+.wind-speed {
+	margin-right: 50px;
+}

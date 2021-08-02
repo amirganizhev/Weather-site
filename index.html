@@ -11,18 +11,32 @@
 </head>
 <body>
 
-	<input type="text" name="cities-search" class="cities-search">
-	<button class="cities-search-button">Найти</button>
+	<div class="content">
 
-	<p class="country-list" title="Страна">--</p>
-	<p class="selected-city" title="Город">--</p>
-	<p class="temperature" title="Температура">--</p>
-	<p class="feels_like-temperature" title="Ощущается как">--</p>
-	<p class="pressure" title="Давление">--</p>
-	<p class="humidity" title="Влажность">--</p>
-	<p class="wind-speed" title="Скорость ветра">--</p>
-	<p class="weather-description" title="Погода">--</p>
-	<p class="weather-icon" title="Иконка">--</p>
+		<div class="main-search">
+			<img src="image/logo.svg" alt="logo">
+			<h1>Поиск погоды города</h1>
+			<input type="text" name="cities-search" class="cities-search">
+			<button class="cities-search-button">Узнать погоду</button>
+		</div>
+
+		<div class="weather">
+			<div class="country-list" title="Страна">--</div>
+			<div class="selected-city" title="Город">--</div>
+			<div class="foundation-weather">
+				<div class="temperature" title="Температура">--</div>
+				<div class="weather-icon" title="Иконка">--</div>
+				<div class="weather-description" title="Описание погоды">--</div>
+				<div class="feels_like-temperature" title="Ощущается как">--</div>
+			</div>
+			<div class="addition-weather">
+				<div class="pressure" title="Давление">--</div>
+				<div class="humidity" title="Влажность">--</div>
+				<div class="wind-speed" title="Скорость ветра">--</div>
+			</div>
+		</div>
+
+	</div>
 	
 	<script type="text/javascript" src="js/script.js"></script>
 

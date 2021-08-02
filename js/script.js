@@ -31,15 +31,15 @@ function weatherSearch() {
 	/*Что выводить*/
 	.then(function (data) {
 		console.log(data);
-		countryList.innerHTML = data.sys.country;
-		selectedCity.innerHTML = data.name;
+		countryList.innerHTML = `Страна: ${data.sys.country}`;
+		selectedCity.innerHTML = `Погода в ${data.name}`;
 		temperature.innerHTML = Math.round(data.main.temp - 273) + "&deg;";
-		feels_likeTemperature.innerHTML = Math.round(data.main.feels_like - 273) + "&deg;";
-		pressure.innerHTML = data.main.pressure;
-		humidity.innerHTML = data.main.humidity;
-		windSpeed.innerHTML = data.wind.speed;
+		feels_likeTemperature.innerHTML = "Ощущается как " + Math.round(data.main.feels_like - 273) + "&deg;";
+		pressure.innerHTML = `Давление ${data.main.pressure} бар`;
+		humidity.innerHTML = `Влажность ${data.main.humidity} %`;
+		windSpeed.innerHTML = `Скорость ветра ${data.wind.speed} м/с`;
 		weatherDescription.innerHTML = data.weather[0]['description'];
-		weatherIcon.innerHTML = `<img src="https://openweathermap.org/img/wn/${data.weather[0]['icon']}@2x.png">`;
+		weatherIcon.innerHTML = `<img src="https://openweathermap.org/img/wn/${data.weather[0]['icon']}@2x.png" width = "200px">`;
 	})
 	/*Обработка ошибок*/
 	.catch(function () {
